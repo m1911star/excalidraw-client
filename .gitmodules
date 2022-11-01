@@ -1,0 +1,4 @@
+[submodule "excalidraw"]
+	path = excalidraw
+	url = https://github.com/excalidraw/excalidraw.git
+	branch = master

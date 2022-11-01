@@ -1,0 +1,74 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+  "build": {
+    "beforeBuildCommand": "yarn build:excalidraw",
+    "beforeDevCommand": "yarn run dev:excalidraw",
+    "devPath": "http://localhost:3000",
+    "distDir": "../excalidraw/build"
+  },
+  "package": {
+    "productName": "Excalidraw",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true
+    },
+    "bundle": {
+      "active": true,
+      "category": "Productivity",
+      "copyright": "",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "icon": [
+        "icons/excalidraw.icns",
+        "icons/icon.png",
+        "icons/icon.svg"
+      ],
+      "identifier": "excalidraw-client",
+      "longDescription": "",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": [],
+      "shortDescription": "",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": false
+    },
+    "macOSPrivateApi": true,
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 800,
+        "resizable": true,
+        "width": 600,
+        "visible": true,
+        "decorations": true,
+        "focus": true,
+        "alwaysOnTop": true,
+        "fileDropEnabled": true,
+        "title": "Excalidraw"
+      }
+    ],
+    "systemTray": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": true
+    }
+  }
+}

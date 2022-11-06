@@ -61,13 +61,13 @@ jobs:
       - name: install node tools
         run: |
           npm install -g yarn
-      - name: install app dependencies & build excalidraw
+      - name: install app dependencies
         run: |
           yarn
           git submodule update --init --recursive
           cd ./excalidraw
           yarn
-          yarn build
+          npx react-scripts build
           cd ../tauri
           cargo install --path .
           cd ..

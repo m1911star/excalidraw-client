@@ -9,7 +9,7 @@
     "dev:client": "yarn tauri dev",
     "build:client": "yarn tauri build",
     "dev:excalidraw": "cd excalidraw && yarn start",
-    "build:excalidraw": "cd excalidraw && yarn build:app"
+    "build:excalidraw": "cd excalidraw && yarn build:prebuild && npx react-scripts build && yarn build:version"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.0.5",

@@ -25,7 +25,8 @@
       "icon": [
         "icons/excalidraw.icns",
         "icons/icon.png",
-        "icons/icon.svg"
+        "icons/icon.svg",
+        "icons/icon.ico"
       ],
       "identifier": "excalidraw-client",
       "longDescription": "",
@@ -61,7 +62,7 @@
         "visible": true,
         "decorations": true,
         "focus": true,
-        "alwaysOnTop": true,
+        "alwaysOnTop": false,
         "fileDropEnabled": true,
         "title": "Excalidraw"
       }
